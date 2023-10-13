@@ -16,7 +16,7 @@
       <nav>
         <div class="nav__bar">
           <div class="logo nav__logo">
-            <button class="btn none">K taxi</button>
+            <button aria-label="K Taxi logo" class="btn none">K taxi</button>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-3-line"></i>
@@ -27,7 +27,7 @@
           <li><a href="#location">Location</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#booking">Booking</a></li>
-          <li><button onclick="window.location.href='tel:+447537985977'" class="btn">📞07537985977</button></li>
+          <li><button aria-label="Phone number +447537985977" onclick="window.location.href='tel:+447537985977'" class="btn">📞07537985977</button></li>
         </ul>
       </nav>
       <div class="section__container header__container">
@@ -41,7 +41,7 @@
 
     <section class="section__container experience__container" id="location">
       <div class="experience__content">
-          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17692.89309824567!2d-2.8283758058146122!3d56.33653109155641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488650981912f9fb%3A0x5526f99ec05ca9f0!2sSt%20Andrews!5e0!3m2!1sen!2suk!4v1697053953262!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="St Andrews map" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17692.89309824567!2d-2.8283758058146122!3d56.33653109155641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488650981912f9fb%3A0x5526f99ec05ca9f0!2sSt%20Andrews!5e0!3m2!1sen!2suk!4v1697053953262!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="experience__content">
         <!-- 
@@ -49,7 +49,7 @@
           Where to pick up,
           Where to drive to.
          -->
-        <p class="section__subheader">Booking</p>
+        <p class="section__subheader" id="booking">Booking</p>
         <h2 class="section__header">
           Online Taxi service
         </h2>
@@ -57,7 +57,7 @@
           Exciting news! Online booking is just around the corner. In the meantime, please feel free to give us a call.
         </p>
 
-      <!-- <div class="section__booking" id="booking">
+      <!-- <div class="section__booking">
         <form action="/">
             <input type="text" placeholder="Your name">
             <input type="date">
@@ -149,7 +149,7 @@
         <!-- </div> -->
         <div class="footer__container custom__container">
         <div class="footer__custom">
-          <h4>Contact Info</h4>
+          <h3>Contact Info</h3>
           <ul class="footer__links">
             <li>
               <p>
@@ -159,13 +159,13 @@
             <li>
               <div class="oneRow">
                 <p>Phone: <span><a href="tel:+447537985977" id="phoneNumber" value="+447537985977">+44 7537985977</a></span></p>
-                <button class="btn fa fa-copy" onclick="copy('phoneNumber')"></button>
+                <button aria-label="Copy the phone number" class="btn fa fa-copy" onclick="copy('phoneNumber')"></button>
               </div>
             </li>
             <li>
               <div class="oneRow">
                 <p>Email: <span><a href="mailto:khaldoon.taxi@gmail.com" id="email">khaldoon.taxi@gmail.com</a></span></p>
-                <button class="btn fa fa-copy" onclick="copy('email')"></button>
+                <button aria-label="Copy the email" class="btn fa fa-copy" onclick="copy('email')"></button>
               </div>
             </li>
           </ul>
