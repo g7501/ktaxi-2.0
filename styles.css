@@ -6,7 +6,7 @@
   --btn-color: #ffaaff;
   --secondary-color: #15151f;
   --secondary-color-dark: #0a0b0f;
-  --text-light: #dddddd;
+  --text-light: black;
   --extra-light: #f8f7fd;
   --white: #ffffff;
   --max-width: 1200px;
@@ -531,11 +531,11 @@ nav {
   background-color: var(--white);
 }
 
-.footer__col h4 {
+.footer__custom h3 {
   /* margin-bottom: 2rem; */
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--white);
+  color: white !important;
 }
 .footer__custom h4 {
   font-size: 1.2rem;
@@ -557,7 +557,7 @@ nav {
 }
 
 .footer__links p {
-  color: var(--text-light);
+  color: #dddddd;
 }
 
 .footer__links p span {
