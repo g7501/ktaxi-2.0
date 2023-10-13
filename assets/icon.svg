@@ -1,0 +1,10 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background rectangle with custom border-radius -->
+              <rect width="200" height="100" fill="var(--secondary-color)" rx="100%" ry="0%" />
+              
+              <!-- Text label with the first letter in "chocolate" and bold -->
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="40" fill="var(--white)">
+                <tspan fill="chocolate" font-weight="bold">K</tspan><tspan font-weight="bold" fill="white">-Taxi</tspan>
+                
+              </text>
+            </svg>
