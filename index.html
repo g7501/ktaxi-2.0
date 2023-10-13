@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Taxi service available 24/7 call us anytime in St Andrews.">
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>K Taxi 24/7 service</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav>
         <div class="nav__bar">
           <div class="logo nav__logo">
@@ -28,13 +23,13 @@
         </div>
         <ul class="nav__links" id="nav-links">
           <li><a href="#home">HOME</a></li>
-          <li><a href="#about">Location</a></li>
-          <li><a href="#client">Reviews</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#reviews">Reviews</a></li>
           <li><a href="#booking">Booking</a></li>
-          <li><button class="btn">📞07537985977</button></li>
+          <li><button onclick="window.location.href='tel:+447537985977'" class="btn">📞07537985977</button></li>
         </ul>
       </nav>
-      <div class="section__container header__container" id="home">
+      <div class="section__container header__container">
         <div class="header__content">
           <h1>We Are Qualified & Professional</h1>
         </div>
@@ -43,28 +38,43 @@
 
     
 
-    <section class="section__container experience__container" id="about">
+    <section class="section__container experience__container" id="location">
       <div class="experience__content">
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17692.89309824567!2d-2.8283758058146122!3d56.33653109155641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488650981912f9fb%3A0x5526f99ec05ca9f0!2sSt%20Andrews!5e0!3m2!1sen!2suk!4v1697053953262!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="experience__content">
-        <p class="section__subheader">WHO WE ARE</p>
+        <!-- 
+          I want date of booking
+          Where to pick up,
+          Where to drive to.
+         -->
+        <p class="section__subheader">Booking</p>
         <h2 class="section__header">
-          We Have 25 Years Of Experience In This Field
+          Online Taxi service
         </h2>
         <p class="section__description">
-          With a rich legacy spanning 25 years, our commitment to excellence in
-          car servicing is unwavering. Our seasoned team brings a wealth of
-          experience to ensure your vehicle receives top-notch care. Trust in
-          our expertise to keep your car running smoothly and safely.
+          Exciting news! Online booking is just around the corner. In the meantime, please feel free to give us a call.
         </p>
-        <button class="btn">Read More</button>
+
+      <!-- <div class="section__booking" id="booking">
+        <form action="/">
+            <input type="text" placeholder="Your name">
+            <input type="date">
+            <input type="time">
+            <input type="number" max="7">
+            <input type="text" placeholder="Pick up ">
+            <button class="btn">Book now</button>
+        </form>
+      </div> -->
+
+        <!-- <button class="btn">Read More</button> -->
       </div>
     </section>
 
-    <!-- <section class="section__container testimonial__container" id="client">
-      <p class="section__subheader">CLIENT TESTIMONIALS</p>
-      <h2 class="section__header">100% Approved By Customers</h2>
+    <section class="section__container testimonial__container" id="reviews">
+      <p class="section__subheader">Client reviews</p>
+      <h2>coming soon</h2>
+      <!-- <h2 class="section__header">100% Approved By Customers</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -105,8 +115,8 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-      </div>
-    </section> -->
+      </div> -->
+    </section>
 
     <footer class="footer">
         <!-- <div class="subscribe__form">
@@ -142,15 +152,20 @@
           <ul class="footer__links">
             <li>
               <p>
-                Experience the magic of a rejuvenated ride as we pamper your car
-                with precision care
+                Taxi service available 24/7 call us anytime in St Andrews.
               </p>
             </li>
             <li>
-              <p>Phone: <span>+44 7537985977</span></p>
+              <div class="oneRow">
+                <p>Phone: <span><a href="tel:+447537985977" id="phoneNumber" value="+447537985977">+44 7537985977</a></span></p>
+                <button class="btn fa fa-copy" onclick="copy('phoneNumber')"></button>
+              </div>
             </li>
             <li>
-              <p>Email: <span>khaldoon.taxi@gmail.com</span></p>
+              <div class="oneRow">
+                <p>Email: <span><a href="mailto:khaldoon.taxi@gmail.com" id="email">khaldoon.taxi@gmail.com</a></span></p>
+                <button class="btn fa fa-copy" onclick="copy('email')"></button>
+              </div>
             </li>
           </ul>
         </div>
