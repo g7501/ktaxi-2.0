@@ -24,33 +24,33 @@ const scrollRevealOptions = {
 };
 
 // header container
-ScrollReveal().reveal(".header__content h1", {
-  ...scrollRevealOptions,
-});
+// ScrollReveal().reveal(".header__content h1", {
+//   ...scrollRevealOptions,
+// });
 
-ScrollReveal().reveal(".header__btn", {
-  ...scrollRevealOptions,
-  delay: 500,
-});
+// ScrollReveal().reveal(".header__btn", {
+//   ...scrollRevealOptions,
+//   delay: 500,
+// });
 
-// service container
-ScrollReveal().reveal(".service__card", {
-  ...scrollRevealOptions,
-  interval: 500,
-});
+// // service container
+// ScrollReveal().reveal(".service__card", {
+//   ...scrollRevealOptions,
+//   interval: 500,
+// });
 
-// price container
-ScrollReveal().reveal(".price__card", {
-  ...scrollRevealOptions,
-  interval: 500,
-});
+// // price container
+// ScrollReveal().reveal(".price__card", {
+//   ...scrollRevealOptions,
+//   interval: 500,
+// });
 
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+// const swiper = new Swiper(".swiper", {
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
 
 // email copy
 function copy(elementId) {
