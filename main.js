@@ -51,23 +51,3 @@ const scrollRevealOptions = {
 //     el: ".swiper-pagination",
 //   },
 // });
-
-// email copy
-function copy(elementId) {
-  const emailElement = document.getElementById(elementId);
-
-  // Create a temporary input element to copy the text
-  const input = document.createElement("input");
-  input.value = emailElement.innerText;
-  document.body.appendChild(input);
-
-  // Select the text in the input and copy it to the clipboard
-  input.select();
-  document.execCommand("copy");
-
-  // Remove the temporary input element
-  document.body.removeChild(input);
-
-  // Alert the user that the text has been copied
-  // alert("Copied the text: " + emailElement.innerText);
-}

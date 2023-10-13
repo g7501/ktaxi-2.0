@@ -34,7 +34,7 @@
   border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%  !important;
 }
 .none::first-letter{
-  color: chocolate !important;
+  color: chocolate;
   font-weight: bold;
 }
 
@@ -451,7 +451,7 @@ nav {
 }
 
 .footer a {
-  color: var(--white) !important;
+  color: var(--white);
 }
 
 .subscribe__container {
@@ -520,7 +520,7 @@ nav {
 .footer__socials a {
   padding: 5px 10px;
   font-size: 1.25rem;
-  color: var(--text-light);
+  color: var(--white);
   background-color: var(--secondary-color);
   border-radius: 100%;
   transition: 0.3s;
@@ -535,7 +535,7 @@ nav {
   /* margin-bottom: 2rem; */
   font-size: 1.2rem;
   font-weight: 600;
-  color: white !important;
+  color: white;
 }
 .footer__custom h4 {
   font-size: 1.2rem;
@@ -548,7 +548,7 @@ nav {
 }
 
 .footer__links a {
-  color: var(--text-light);
+  color: var(--white);
   transition: 0.3s;
 }
 
