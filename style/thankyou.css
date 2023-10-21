@@ -1,0 +1,32 @@
+body {
+   /* background-color: #34568B; */
+   /* background:
+  radial-gradient(circle, transparent 20%, slategray 20%,
+    slategray 80%, transparent 80%, transparent),
+  radial-gradient(circle, transparent 20%, slategray 20%,
+    slategray 80%, transparent 80%, transparent) 50px 50px,
+  linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+  linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+background-color: slategray;
+background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px; */
+
+}
+
+.thankyou {
+    width: fit-content;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #DD4124;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
