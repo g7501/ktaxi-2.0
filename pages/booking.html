@@ -51,11 +51,13 @@
         </p>
 
         <div class="section__booking card">
-            <form method="post" action="">
+          <!--  475d2ecb-159a-4e7e-921e-09db3af092a3 -->
+            <form method="post" action="https://api.web3forms.com/submit">
                     <label class="required" for="text">Name</label>
                     <input required type="text" id="name" name="name" placeholder="Your name">
                     <label class="required" for="text">Phone number</label>
                     <input required type="text" id="phoneNumber" name="phoneNumber"  placeholder="Phone number">
+                    <input type="hidden" name="access_key" value="475d2ecb-159a-4e7e-921e-09db3af092a3">
                     <!-- <label class="required" for="text">Numper of guests</label>
                     <input type="number" placeholder="Pick up address"> -->
                     <!-- <label class="required" for="text">Pick up address</label>
@@ -101,27 +103,6 @@
         </div>
       </div>
     </footer>
-    <?php
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST["name"];
-        $phoneNumber = $_POST["phoneNumber"];
-        $message = $_POST["message"];
-
-        $txt = "You have received an e-mail from ".$name.".\n\n".$message;
-    
-        $to = "khaldoon.taxi@gmail.com";
-        $subject = "New contact form submission from $name";
-        $headers = "From: My website ";
-    
-        if (mail($to, $subject, $txt, $headers)) {
-            echo "Message sent successfully!";
-        } else {
-            echo "Message sending failed.";
-        }
-      }
-  ?>
-
-
     <div class="footer__bar">
       Copyright © 2023 K-Taxi. All rights reserved.
     </div>
